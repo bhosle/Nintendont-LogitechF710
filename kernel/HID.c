@@ -239,7 +239,7 @@ s32 HIDOpen( u32 LoaderRequest )
 
 			u32 bEndpointAddress = *(vu8*)(HIDHeap+Offset+2);
 
-			bool isXBOX = (DeviceVID == 0x045e && DevicePID == 0x028e);
+			bool isXBOX = (DeviceVID == 0x046d && DevicePID == 0xc21f);
 			if (isXBOX && bEndpointAddress != 0x81)
 			{
 				// XBOX360: ignore irrelevant endpoints

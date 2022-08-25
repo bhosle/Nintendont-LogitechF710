@@ -418,7 +418,7 @@ u32 PADRead(u32 calledByGame)
 				button |= PAD_BUTTON_LEFT;
 		}
 
-		if ((HID_CTRL->VID == 0x045e) && (HID_CTRL->PID == 0x028e))	//XBOX360 controller
+		if ((HID_CTRL->VID == 0x046d) && (HID_CTRL->PID == 0xc21f))	//XBOX360 controller
 		{
 			//XBOX: swap abxy when L+Back buttons are pressed
 			if((HID_Packet[3] & 0x01) && (HID_Packet[2] & 0x20))
@@ -478,7 +478,7 @@ u32 PADRead(u32 calledByGame)
 					button |= PAD_TRIGGER_R;
 			}
 		}
-		else if ((HID_CTRL->VID == 0x045e) && (HID_CTRL->PID == 0x028e))	//XBOX360 controller
+		else if ((HID_CTRL->VID == 0x046d) && (HID_CTRL->PID == 0xc21f))	//XBOX360 controller
 		{
 			// fully pressed triggers
 			if(HID_Packet[HID_CTRL->LAnalog] == 255)

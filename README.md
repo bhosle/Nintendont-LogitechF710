@@ -1,3 +1,11 @@
+### Fork of revvv/Nintendont-XBOX360 to support Logitech F710
+* Recompiled by replacing XBOX360 VID:PID with Logitech's
+* Rotated revvv's keymap for face button clockwise for my personal preference
+* Working: Analog triggers
+* NOT Working: Vibration. Tried all EndpointOut values from 1-8
+
+Original README below
+
 ### Nintendont with XBOX360 controller support
 * Only XBOX360 **wired version** is supported (VID=0x045e, PID=0x028e)
 * You control player 1.
